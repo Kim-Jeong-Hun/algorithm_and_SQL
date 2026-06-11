@@ -1,5 +1,15 @@
-# Java & Javascript
+# 알고리즘, SQL 풀이
 
-이제부터 언어를 바꾸지 않고, 
-Java와 Javascript로만
-코딩테스트, 알고리즘 연습을 할 것을 굳게 다짐합니다.
+알고리즘과 SQL 문제 풀이 저장용 저장소
+
+
+
+
+### 알고리즘 풀이용 언어
+
+#### 메인
+- Java
+
+#### 서브
+- Python
+- JavaScript
