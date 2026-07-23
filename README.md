@@ -7,8 +7,7 @@
 ### 알고리즘 풀이용 언어
 
 #### 메인
-- Java
+- Python
 
 #### 서브
-- Python
 - JavaScript
