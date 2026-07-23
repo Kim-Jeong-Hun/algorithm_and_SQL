@@ -11,3 +11,6 @@
 
 #### 서브
 - JavaScript
+
+### SQL
+- MySQL
