@@ -1,0 +1,34 @@
+'''
+자연수 n이 주어졌을 때, n의 다음 큰 숫자는 다음과 같이 정의 합니다.
+
+조건 1. n의 다음 큰 숫자는 n보다 큰 자연수 입니다.
+조건 2. n의 다음 큰 숫자와 n은 2진수로 변환했을 때 1의 갯수가 같습니다.
+조건 3. n의 다음 큰 숫자는 조건 1, 2를 만족하는 수 중 가장 작은 수 입니다.
+예를 들어서 78(1001110)의 다음 큰 숫자는 83(1010011)입니다.
+
+자연수 n이 매개변수로 주어질 때, n의 다음 큰 숫자를 return 하는 solution 함수를 완성해주세요.
+'''
+
+
+def solution(n):
+    # n을 이진수로 변환했을 때 1의 갯수를 구하기
+    n_bin_count = 0
+    for i in str(bin(n)):
+        if i == '1':
+            n_bin_count += 1
+    
+    # n+1부터 이진수로 변환했을 때 1의 갯수를 구해서 비교
+    next_num = n+1
+    while True:
+        next_num_bin_count = 0
+        for i in str(bin(next_num)):
+            if i == '1':
+                next_num_bin_count += 1
+        # 만약 같으면 루프 탈출
+        if next_num_bin_count == n_bin_count:
+            break
+        # 아니면 1 증가시켜서 다시 수행
+        else:
+            next_num += 1
+    
+    return next_num
